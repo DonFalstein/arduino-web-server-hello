@@ -30,6 +30,7 @@ void loop() {
         client.println(F("<header><h2>Hello</h2></header>"));
         client.println("<article>");
         client.println(F("<section><p>Hello, I am an Arduino web server designed to introduce myself to the world.</p></section>"));
+        client.println(F("<section><p>More Arduino files, inlcuding but not limited to web servers, will be published on GitHub in August 2017.</p></section>"));
         client.println("</article>");
         client.println("</main>");
         client.println(F("<footer><p>Aruino Web Server Hello is openly available and distributable with the BSD-3 copyright license included in this GitHub repository made available by Don Falstein - August 2017.</p><p>If you have any questions, please create an issue or a pull request.</p></footer>"));
