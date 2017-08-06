@@ -1,5 +1,5 @@
-include <SPI.h>
-include <Ethernet.h>
+#include <SPI.h>
+#include <Ethernet.h>
 byte mac[] = { 0x90, 0xA2, 0xDA, 0x00, 0xE4, 0xA0 };
 IPAddress ip(10, 0, 0, 223);
 IPAddress gateway(10, 0, 0, 1);
@@ -21,7 +21,7 @@ void loop() {
         client.println("Connection: close");
         // client.println("Refresh:10");
         client.println();
-        client.println("<!DOCTYPE HTML>
+        client.println("<!DOCTYPE HTML>");
         client.println("<html lang='en'>");
         client.println(F("<head><title>Arduino Web Server Hello</title><meta charset='utf-8'><meta name='author' content='Don Falstein'><meta name='description' content='Arduino Web Server Hello'></head>"));
         client.println("<body>");
